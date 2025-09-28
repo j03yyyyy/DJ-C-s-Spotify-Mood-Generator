@@ -21,3 +21,9 @@ int main() {
     cout << "5. Surprise Me 🎲\n";
     cout << "Enter choice (1-5): ";
     cin >> moodChoice;
+
+    // If user picks shuffle
+    if (moodChoice == 5) {
+        moodChoice = (rand() % 4) + 1; // random mood 1–4
+        cout << "\n🎲 Surprise! Your random mood is: " << moodChoice << endl;
+    }

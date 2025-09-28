@@ -47,3 +47,30 @@ int main() {
 
     // Random engine for shuffle
     default_random_engine rng(time(0));
+
+    cout << "\n🎵 Your Custom Playlist 🎵\n";
+
+    if (moodChoice == 1) {
+        cout << "Mood: Chill 🌙 | Genre: Lo-Fi / Acoustic\n";
+        shuffle(chillSongs.begin(), chillSongs.end(), rng);
+        for (int i=0; i<3; i++) cout << "- " << chillSongs[i] << endl;
+    } 
+    else if (moodChoice == 2) {
+        cout << "Mood: Happy 😄 | Genre: Pop / Indie Pop\n";
+        shuffle(happySongs.begin(), happySongs.end(), rng);
+        for (int i=0; i<3; i++) cout << "- " << happySongs[i] << endl;
+    } 
+    else if (moodChoice == 3) {
+        cout << "Mood: Sad 😢 | Genre: R&B / Soft Rock\n";
+        shuffle(sadSongs.begin(), sadSongs.end(), rng);
+        for (int i=0; i<3; i++) cout << "- " << sadSongs[i] << endl;
+    } 
+    else if (moodChoice == 4) {
+        cout << "Mood: Energetic 🔥 | Genre: EDM / Hip-Hop\n";
+        shuffle(hypeSongs.begin(), hypeSongs.end(), rng);
+        for (int i=0; i<3; i++) cout << "- " << hypeSongs[i] << endl;
+    } 
+    else {
+        cout << "Invalid choice! Please pick 1–5.\n";
+        return 0;
+    }

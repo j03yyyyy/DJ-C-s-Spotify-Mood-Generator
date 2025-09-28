@@ -27,3 +27,23 @@ int main() {
         moodChoice = (rand() % 4) + 1; // random mood 1–4
         cout << "\n🎲 Surprise! Your random mood is: " << moodChoice << endl;
     }
+
+    // Song pools (using vector instead of raw array)
+    vector<string> chillSongs = {"Coffee - beabadoobee", "Falling Behind - Laufey", 
+                                "Night Owl - Galimatias", "Peach - Kevin Abstract", 
+                                "Lost in You - khai dreams"};
+
+    vector<string> happySongs = {"Levitating - Dua Lipa", "Sunroof - Nicky Youre", 
+                                "Good as Hell - Lizzo", "Walking on Sunshine - Katrina & The Waves", 
+                                "Happy - Pharrell Williams"};
+
+    vector<string> sadSongs   = {"drivers license - Olivia Rodrigo", "Someone Like You - Adele", 
+                                "All I Want - Kodaline", "The Night We Met - Lord Huron", 
+                                "Fix You - Coldplay"};
+
+    vector<string> hypeSongs  = {"Blinding Lights - The Weeknd", "Turn Down for What - DJ Snake", 
+                                "Titanium - David Guetta ft. Sia", "Stronger - Kanye West", 
+                                "Uptown Funk - Bruno Mars"};
+
+    // Random engine for shuffle
+    default_random_engine rng(time(0));

@@ -74,3 +74,12 @@ int main() {
         cout << "Invalid choice! Please pick 1–5.\n";
         return 0;
     }
+
+    // Rating system
+    int rating;
+    cout << "\n⭐ Rate this playlist (1-5 stars): ";
+    cin >> rating;
+    cout << "Thanks for your feedback! DJ C++ will keep improving 🎶\n";
+
+    return 0;
+}
